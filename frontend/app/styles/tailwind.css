@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      --oasen-blue: #26b4f4;
+    }
+
+    @font-face{
+        font-family:"strada";
+        src: font-url('../../public/fonts/strada.ttf');
+        format: ('truetype');
+    }
+}

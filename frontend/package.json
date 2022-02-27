@@ -1,0 +1,37 @@
+{
+  "name": "remix-app-template-js",
+  "private": true,
+  "description": "",
+  "license": "",
+  "sideEffects": false,
+  "scripts": {
+    "build": "npm run build:css && remix build",
+    "dev": "concurrently \"npm run dev:css\" \"cross-env NODE_ENV=development remix dev\"",
+    "build:css": "tailwindcss -i ./app/styles/tailwind.css -o app/styles/app.css --minify",
+    "dev:css": "tailwindcss -i ./app/styles/tailwind.css -o app/styles/app.css --watch",
+    "postinstall": "remix setup node",
+    "start": "cross-env NODE_ENV=production remix-serve build",
+    "lint": "eslint app/**/*.js app/**/*.jsx"
+  },
+  "dependencies": {
+    "@remix-run/react": "^1.2.2",
+    "@remix-run/serve": "^1.2.2",
+    "@rollup/plugin-inject": "^4.0.4",
+    "cross-env": "^7.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remix": "^1.2.2"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.2.2",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "autoprefixer": "^10.4.2",
+    "concurrently": "^7.0.0",
+    "eslint-plugin-react": "^7.29.2",
+    "postcss": "^8.4.7",
+    "tailwindcss": "^3.0.23"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
