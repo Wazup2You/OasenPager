@@ -2,10 +2,11 @@
 Een onepager over ons project voor Oasen.
 
 # Project opstarten
-1. cd frontend
-2. configureer Eslint
-3. npm i
-4. npm run dev
+1. Ga naar de 'development' branche
+2. cd frontend
+3. configureer Eslint
+4. npm i
+5. npm run dev
 
 **Let op:** Zorg dat je Node versie 14 of hoger op je computer hebt geïnstalleerd, dit kan je controlleren met cmd ```node -v``` 
 
