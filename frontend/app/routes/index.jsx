@@ -9,8 +9,6 @@ export default function Index() {
 	
 	const Section = (props) => {
 		const [ref, inView] = useInView({threshold: 0})
-
-		console.log(inView)
 	
 		React.useEffect(() => {
 			if (inView) {
