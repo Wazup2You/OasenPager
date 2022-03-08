@@ -35,6 +35,10 @@
         ],
         "no-multiple-empty-lines":[
             "error"
+        ],
+        "react/prop-types":[
+            "error",
+            "never"
         ]
     }
 }

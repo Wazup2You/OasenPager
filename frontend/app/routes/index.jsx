@@ -9,7 +9,8 @@ export default function Index() {
 			backgroundColor: '#26B4F4',
 			width: '1920px',
 			height: '1080px'
-		}}><h1 className="text-4xl font-strada" style={{color: 'white'}}>Oasen onepager</h1></div>
+		}}><h1 className="text-4xl font-strada">Oasen onepager</h1></div>
+			
 	
 		</>
 	)
