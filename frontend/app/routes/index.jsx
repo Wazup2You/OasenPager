@@ -5,22 +5,22 @@ import { useInView } from 'react-intersection-observer'
 export default function Index() {
 	const [indexActive, setIndexActive] = React.useState(0)
 	
-	const sections= [0,1]
+	const sections = [0,1]
 	
-	const Section = () => {
+	const Section = (props) => {
 		const [ref, inView] = useInView({threshold: 0})
 
 		console.log(inView)
 	
 		React.useEffect(() => {
 			if (inView) {
-				this.props.inViewHandler()
+				props.inViewHandler()
 			}
 		}, [inView])
 	
 		return (
-			<section ref={ref} id={this.props.id} className={`w-screen h-screen ${this.props.id == 0 ? 'bg-red-500' : 'bg-green-500'}`} >
-				{this.props.children}
+			<section ref={ref} id={props.id} className={`w-screen h-screen ${props.id == 0 ? 'bg-red-500' : 'bg-green-500'}`} >
+				{props.children}
 			</section>
 		)
 	}
