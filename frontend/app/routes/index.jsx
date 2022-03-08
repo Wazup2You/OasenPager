@@ -2,8 +2,15 @@ import React from 'react'
 
 export default function Index() {
 	return (
-		<div>
-			<h1 className='text-blue-oasen text-4xl font-strada'>Oasen onepager</h1>
+		<><div>
+			
 		</div>
+		<div style={{
+			backgroundColor: '#26B4F4',
+			width: '1920px',
+			height: '1080px'
+		}}><h1 className="text-4xl font-strada" style={{color: 'white'}}>Oasen onepager</h1></div>
+	
+		</>
 	)
 }
