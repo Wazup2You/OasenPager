@@ -23,16 +23,17 @@ export default function Index() {
 
 
 	return (
-		<><div>
-			
-		</div>
-		<div style={{
-			backgroundColor: '#26B4F4',
-			width: '1920px',
-			height: '1080px'
-		}}><h1 className="text-4xl font-strada">Oasen onepager</h1></div>
-			
-	
+		<>
+			<h1 className="text-blue-oasen text-4xl font-strada">Oasen onepager</h1>
+
+			<DotNav sections={sections} activeState={indexActive} />
+			<Section inViewHandler={() => setIndexActive(0)} id={sections[0]}>
+			</Section>
+
+			<Section inViewHandler={() => setIndexActive(1)} id={sections[1]}>
+			</Section>
+
+
 		</>
 	)
 }
