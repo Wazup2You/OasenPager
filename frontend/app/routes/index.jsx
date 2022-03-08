@@ -1,4 +1,6 @@
 import React from 'react'
+import { DotNav } from '~/components/DotNav/Component'
+import { useInView } from 'react-intersection-observer'
 
 export default function Index() {
 	const [indexActive, setIndexActive] = React.useState(0)
