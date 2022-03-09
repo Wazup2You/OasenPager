@@ -5,11 +5,18 @@
 @layer base {
     :root {
       --oasen-blue: #26b4f4;
+      --oasen-blue-dark: #109EDE;
     }
 
     @font-face{
         font-family:"strada";
         src: font-url('../../public/fonts/strada.ttf');
         format: ('truetype');
+    }
+}
+
+@layer components {
+  .oasenh1{
+    @apply font-strada text-blue-oasen text-3xl font-bold
     }
 }

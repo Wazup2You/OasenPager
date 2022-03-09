@@ -7,7 +7,8 @@ module.exports = {
 		extend: {
 			colors:{
 				blue: {
-					oasen:	'var(--oasen-blue)'
+					oasen:	'var(--oasen-blue)',
+					oasenDark: 'var(--oasen-blue-dark)'
 				}
 			},
 			fontFamily:{
@@ -21,5 +22,8 @@ module.exports = {
 		lg: '1024px',
 		xl: '1440px'
 	},
-	plugins:[require('@tailwindcss/line-clamp')],
+	plugins:[
+		require('@tailwindcss/line-clamp'), 
+		require('tailwind-scrollbar-hide')
+	],
 }

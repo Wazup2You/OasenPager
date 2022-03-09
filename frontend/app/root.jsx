@@ -26,7 +26,7 @@ export default function App() {
 				<Meta />
 				<Links />
 			</head>
-			<body>
+			<body className='scrollbar-hide'>
 				<Outlet />
 				<ScrollRestoration />
 				<Scripts />
