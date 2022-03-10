@@ -11,10 +11,10 @@ export function Navbar() {
         
         <ul class="md:flex md:items-center">
             <li class="mx-4">
-                <a href="https://www.oasen.nl/mijn-oasen" class="text-xl oasenwhite hover:text-black duration-500">Mijn Oasen</a>
+                <a href="https://www.oasen.nl/mijn-oasen" class="text-xl oasenwhite hover:text-white duration-500">Mijn Oasen</a>
             </li>
             <li class="mx-4">
-                <a href="https://www.oasen.nl/drinkwater" class="text-xl oasenwhite hover:text-black duration-500">Drinkwater</a>
+                <a href="https://www.oasen.nl/drinkwater" class="text-xl oasenwhite hover:text-white duration-500">Drinkwater</a>
             </li>
             <button class="flex text-xl bg-blue-oasenDark text-white oasenwhite duration-500 px-6 py-2 mx-4 hover:opacity-30 rounded">
                 Menu<ion-icon name="menu" class="text-3xl"></ion-icon>
