@@ -19,4 +19,7 @@
   .oasenh1{
     @apply font-strada text-blue-oasen text-3xl font-bold
     }
+  .oasenwhite{
+    @apply font-strada text-white text-3xl font-bold
+    }
 }

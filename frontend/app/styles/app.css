@@ -489,6 +489,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: var(--oasen-blue);
 }
 
+.oasenwhite {
+  font-family: strada, sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .fixed {
   position: fixed;
 }
@@ -727,11 +736,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-30:hover {
