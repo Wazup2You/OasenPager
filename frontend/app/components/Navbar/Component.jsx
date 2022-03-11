@@ -16,9 +16,9 @@ export function Navbar() {
             <li class="mx-4">
                 <a href="https://www.oasen.nl/drinkwater" class="text-xl oasenwhite hover:text-black duration-500">Drinkwater</a>
             </li>
-            <button class="flex text-xl bg-blue-oasenDark text-white oasenwhite duration-500 px-6 py-2 mx-4 hover:opacity-30 rounded">
+            {/* <button class="flex text-xl bg-blue-oasenDark text-white oasenwhite duration-500 px-6 py-2 mx-4 hover:opacity-30 rounded">
                 Menu<ion-icon name="menu" class="text-3xl"></ion-icon>
-            </button>
+            </button> */}
             
         </ul>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
