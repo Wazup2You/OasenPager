@@ -8,12 +8,14 @@ import { Footer } from '~/components/Footer/component'
 import { Landing } from '~/components/Landing/component'
 import { Research } from '~/components/Research/component'
 import { Proces } from '~/components/Proces/component'
-import { Concept } from '~/components/Concept/component'
+import { Accessibility } from '~/components/Concept/Accessibility'
+import { OasenForKids } from '~/components/Concept/OasenForKids'
+import { TweeDruppels } from '~/components/Concept/TweeDruppels'
 
 export default function Index() {
 	const [indexActive, setIndexActive] = React.useState(0)
 	
-	const sections = [0,1,2,3]
+	const sections = [0,1,2,3,4,5,6]
 	
 	const Section = (props) => {
 		const [ref, inView] = useInView({threshold: 0.5})
@@ -53,8 +55,20 @@ export default function Index() {
 			</Section>
 			<Section inViewHandler={() => setIndexActive(3)} id={sections[3]}>
 				<SectionContainer></SectionContainer>
-				<Concept />
-			</Section>			
+				<h1 className='absolute oasenh1'>Concepten</h1>
+			</Section>
+			<Section inViewHandler={() => setIndexActive(4)} id={sections[4]}>
+				<SectionContainer></SectionContainer>
+				<Accessibility />
+			</Section>		
+			<Section inViewHandler={() => setIndexActive(5)} id={sections[5]}>
+				<SectionContainer></SectionContainer>
+				<OasenForKids />
+			</Section>	
+			<Section inViewHandler={() => setIndexActive(6)} id={sections[6]}>
+				<SectionContainer></SectionContainer>
+				<TweeDruppels />
+			</Section>		
 			<Footer />
 			<div class="p-10 bg-blue-oasen"></div>
 		</div>

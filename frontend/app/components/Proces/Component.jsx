@@ -1,6 +1,10 @@
 export function Proces (props) {
 
 	return (
-			<h1 className='absolute oasenh1'>Proces</h1>		
+			<div className='absolute oasenh1'>
+			<h1>Proces</h1>	
+			<h1>Proces</h1>	
+			<h1>Proces</h1>	
+			</div>	
 	)
 }
