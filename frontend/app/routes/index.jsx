@@ -5,6 +5,10 @@ import { SectionContainer } from '~/components/SectionContainer/Component'
 import { SectionWater } from '~/components/SectionWater/Component'
 import { Navbar } from '~/components/Navbar/Component'
 import { Footer } from '~/components/Footer/component'
+import { Landing } from '~/components/Landing/component'
+import { Research } from '~/components/Research/component'
+import { Proces } from '~/components/Proces/component'
+import { Concept } from '~/components/Concept/component'
 
 export default function Index() {
 	const [indexActive, setIndexActive] = React.useState(0)
@@ -35,17 +39,21 @@ export default function Index() {
 			<DotNav sections={sections} activeState={indexActive} />			
 			<Section inViewHandler={() => setIndexActive(0)} id={sections[0]}>	
 				<SectionContainer></SectionContainer>
-				<h1 className='absolute oasenh1'>Oasen gimmick door team W&W</h1>
+				<Landing />
 			</Section>			
 			<Section inViewHandler={() => setIndexActive(1)} id={sections[1]}>
-			<div className="absolute w-full h-full top-1/2 z-30 -translate-x-1/2 left-1/2 -translate-y-1/2 flex justify-center items-center"><SectionContainer></SectionContainer></div>
+			<div className="absolute w-full h-full top-1/2 z-30 -translate-x-1/2 left-1/2 -translate-y-1/2 flex justify-center items-center">
+				<SectionContainer></SectionContainer>
+				<Research /></div>
 				<SectionWater></SectionWater>
 			</Section>
 			<Section inViewHandler={() => setIndexActive(2)} id={sections[2]}>
 				<SectionContainer></SectionContainer>
+				<Proces />
 			</Section>
 			<Section inViewHandler={() => setIndexActive(3)} id={sections[3]}>
 				<SectionContainer></SectionContainer>
+				<Concept />
 			</Section>			
 			<Footer />
 			<div class="p-10 bg-blue-oasen"></div>

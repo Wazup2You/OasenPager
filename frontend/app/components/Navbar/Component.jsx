@@ -7,6 +7,9 @@ export function Navbar() {
             <span class="cursor-pointer">
                 <img class="h-20 inline" src={require('../../src/Oasen_Logo_Drinkwater_Kleur_RGB.png')} alt="Oasen Drinkwater" />   
             </span>
+            <span class="cursor-pointer">
+                <img class="h-20 inline" src={require('../../src/Logo.png')} alt="Oasen Drinkwater" />   
+            </span>
         </div>
         
         <ul class="md:flex md:items-center">
