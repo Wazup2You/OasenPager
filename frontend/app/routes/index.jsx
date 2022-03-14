@@ -35,7 +35,7 @@ export default function Index() {
 
 
 	return (
-		<body class=''>
+		<body className=''>
 			<div className='h-screen scrollbar-hide'>			
 			<Navbar />
 			<DotNav sections={sections} activeState={indexActive} />			
@@ -46,16 +46,13 @@ export default function Index() {
 			<Section inViewHandler={() => setIndexActive(1)} id={sections[1]}>
 			<div className="absolute w-full h-full top-1/2 z-30 -translate-x-1/2 left-1/2 -translate-y-1/2 flex justify-center items-center">
 				<SectionContainer></SectionContainer>
-				<Research /></div>
+			</div>
 				<SectionWater></SectionWater>
+				<Research />
 			</Section>
 			<Section inViewHandler={() => setIndexActive(2)} id={sections[2]}>
 				<SectionContainer></SectionContainer>
 				<Proces />
-			</Section>
-			<Section inViewHandler={() => setIndexActive(3)} id={sections[3]}>
-				<SectionContainer></SectionContainer>
-				<h1 className='absolute oasenh1'>Concepten</h1>
 			</Section>
 			<Section inViewHandler={() => setIndexActive(4)} id={sections[4]}>
 				<SectionContainer></SectionContainer>
@@ -70,7 +67,7 @@ export default function Index() {
 				<TweeDruppels />
 			</Section>		
 			<Footer />
-			<div class="p-10 bg-blue-oasen"></div>
+			<div className="p-10 bg-blue-oasen"></div>
 		</div>
 		</body>		
 	)
